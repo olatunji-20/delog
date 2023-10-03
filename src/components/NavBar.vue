@@ -1,6 +1,8 @@
 <template>
     <div class="border-2 border-red-400 w-[100%] h-[5rem] flex justify-between py-4 px-6 md:px-12">
-        <div class="border border-green-400 w-[150px] h-[50px]"></div>
+        <div class="border border-green-400 w-[150px] h-[50px]">
+            <img src="/img/delog-logo.svg" />
+        </div>
         <div class="border border-yellow-400 w-[auto] h-[35px] mt-2 hidden md:inline">
             <ul>
                 <li class="inline-block px-2 mx-4">Home</li>
