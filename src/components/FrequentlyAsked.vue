@@ -1,6 +1,6 @@
 <template>
   <div class="border-4 border-red-500 w-[100%] h-[auto]">
-    <div class="border border-blue-300 w-[100%] h-[auto] p-6">
+    <div class="border border-blue-300 w-[100%] h-[auto] p-6 md:py-16">
         <h1 class="font-bold text-3xl text-center">FREQUENTLY ASKED QUESTIONS</h1>
         <p class="text-center pt-4">Everything you need to know about the product and billing.</p>
     </div>

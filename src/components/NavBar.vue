@@ -5,11 +5,11 @@
         </div>
         <div class="border border-yellow-400 w-[auto] h-[35px] mt-2 hidden md:inline">
             <ul>
-                <li class="inline-block px-2 mx-4">Home</li>
-                <li class="inline-block px-2 mx-4">Services</li>
-                <li class="inline-block px-2 mx-4">Company</li>
-                <li class="inline-block px-2 mx-4">News</li>
-                <li class="inline-block px-2 mx-4">Blog</li>
+                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Home</li>
+                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Services</li>
+                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Company</li>
+                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">News</li>
+                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Blog</li>
             </ul>
         </div>
         <div class="border border-red-400 w-[50px] h-[50px] md:hidden"></div>

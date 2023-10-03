@@ -1,7 +1,7 @@
 <template>
   <div class="border-2 border-blue-500 w-[100%] h-[auto]">
     <div class="border border-green-400 w-[95%] h-[auto] mx-auto my-4 text-left md:w-[60%]">
-                <p class="font-bold inline-block">Is STANDARD STANDARD there a free trial available?</p>
+                <p class="font-bold inline-block">Is STANDARD there a free trial available?</p>
                 <p @click="question1" class="cursor-pointer border border-blue-500 font-bold text-2xl relative bottom-2 float-right inline-block" v-text="showQues1 ? '-' : '+'">
                 </p>
                 <p v-show="showQues1" class="border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nihil doloremque fugit?</p>
