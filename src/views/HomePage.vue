@@ -15,8 +15,8 @@
         <div class="border-2 border-red-300 w-[22rem] h-[550px] mx-[auto] my-8 md:hidden">            
             <img src="/img/sea.png" alt="sea-travel" class="w-[100%] h-[100%] object-cover" />
         </div>
-        <div class="border-2 border-red-600 hidden md:block md:mx-[auto] w-[75%] h-[350px] my-12">            
-            <img src="/img/flight.png" alt="sea-travel" class="w-[100%] h-[100%] object-cover" />
+        <div class="border-2 border-red-600 hidden md:block md:mx-[auto] w-[75%] h-[320px] my-12">            
+            <img src="/img/large.png" alt="sea-travel" class="w-[100%] h-[100%] object-contain" />
         </div>
 
         <div class="border-2 border-green-500 w-[100%] h-[auto] mb-8 flex flex-col flex-wrap md:flex-row justify-center">
@@ -73,11 +73,11 @@
     <!-- WHY DELOG SECTION -->
 
 
-    <ShipDelog />
-    <WedLove />
     <FrequentlyAsked />
     <NewsLetter />
     <FootBar />
+    <ShipDelog />
+    <WedLove />
 </template>
 
 <script>

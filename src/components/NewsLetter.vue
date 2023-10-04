@@ -1,5 +1,5 @@
 <template>
-  <div class="border-4 border-blue-400 w-[100%] h-[auto] py-12">
+  <div class="border-4 border-blue-400 w-[100%] h-[auto] py-12 mb-20">
     <h1 class="font-bold text-3xl text-center">SIGN UP FOR OUR NEWSLETTER</h1>
     <p class="text-center pt-4">Be the first to know about releases, industry news and insights.</p>
     <div class="my-6 border-2 mx-auto w-[300px] h-[auto] md:w-[500px] md:h-[auto]">

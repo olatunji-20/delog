@@ -1,5 +1,5 @@
 <template>
-  <div class="border-4 border-blue-500 w-[100%] h-[auto] py-16 px-6">
+  <div class="border-4 border-blue-500 w-[100%] h-[auto] py-16 px-6 mb-20">
     <h1 class="font-bold text-3xl text-center">SHIP WITH <span class="text-blue-500">DELOG</span></h1>
     <p class="text-center pt-4">Be the first to know about releases, industry news and insights.</p>
     <div class="border-2 border-red-400 w-[90%] h-[auto] mx-[auto] my-6 md:w-[45%]">

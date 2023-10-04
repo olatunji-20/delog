@@ -1,5 +1,5 @@
 <template>
-    <div class="border-2 border-red-400 w-[100%] h-[5rem] flex justify-between py-4 px-6 md:px-12">
+    <div class="border-2 border-red-400 w-[100%] h-[6rem] flex justify-between py-5 px-6 md:px-12">
         <div class="border border-green-400 w-[150px] h-[50px]">
             <img src="/img/delog-logo.svg" />
         </div>

@@ -14,7 +14,7 @@
                 <p>Less Container Loading</p>
             </div>
             <div class="border-2 border-blue-400 w-[100%] mt-6 py-3 text-center rounded-md">
-                <p class="text-blue-400">Read More</p>
+                <router-link to="/sea-shipments"><p class="text-blue-400">Read More</p></router-link>
             </div>
         </div>
         <div class="border-2 border-green-400 w-[100%] h-[350px] my-2 md:w-[28rem]">
