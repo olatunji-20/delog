@@ -3,7 +3,7 @@
         <div class="border-4 border-green-400 w-[100%] h-[auto] px-4 pt-8 md:w-[51%]">                   
             <h1 class="font-bold text-3xl text-center md:text-left">OUR WAREHOUSES</h1>
             <p class="text-center pt-4 md:text-left">No money, no problem. Untitled is a next-generation financial technology company in the process.</p>
-            <div class="border-2 border-purple-400 w-[100%] h-[200px] mt-16 md:h-[220px] md:mt-8">image</div>
+            <div class="border-2 border-purple-400 w-[100%] h-[20px] mt-16 md:h-[250px] md:mt-8">image</div>
         </div>
         <div class="border-4 border-blue-400 w-[100%] h-[auto] md:w-[42%]">
             <div class="border border-red-400 w-[100%] h-[120px] p-4 my-4 flex flex-row flex-nowrap justify-between cursor-pointer duration-150 hover:bg-blue-400 hover:text-white hover:shadow-lg">
@@ -36,7 +36,7 @@
 
 <script>
 export default {
-    name: 'OurWarehouse',
+    name: 'OurWareHouse',
     setup() {
 
     }

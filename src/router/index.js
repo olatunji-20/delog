@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import SeaShipments from '../views/SeaShipments.vue'
 import AirShipments from '../views/AirShipments.vue'
+import ContactUs from '../views/ContactUs.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,9 +18,14 @@ const router = createRouter({
       component: SeaShipments
     },
     {
-      path: '/air-shipmentS',
+      path: '/air-shipments',
       name: 'AirShipments',
       component: AirShipments
+    },
+    {
+      path: '/contact-us',
+      name: 'ContactUs',
+      component: ContactUs
     }
   ],
   scrollBehavior(stand, homepage, savedPosition) {

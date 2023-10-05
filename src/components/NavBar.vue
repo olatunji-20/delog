@@ -5,7 +5,7 @@
         </div>
         <div class="border border-yellow-400 w-[auto] h-[35px] mt-2 hidden md:inline">
             <ul>
-                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Home</li>
+                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/">Home</router-link></li>
                 <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Services</li>
                 <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Company</li>
                 <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">News</li>
@@ -15,7 +15,7 @@
         <div class="border border-red-400 w-[50px] h-[50px] md:hidden"></div>
         <div class="border border-blue-400 w-[180px] h-[50px] hidden md:flex justify-between ">
             <div class="border border-red-400 w-[auto] h-[auto]">
-                <p class="py-2 px-6">Contact</p>
+                <router-link to="/contact-us"><p class="py-2 px-6">Contact</p></router-link>
             </div>
             <div class="border border-red-400 w-[45px] h-[50px]"></div>
 

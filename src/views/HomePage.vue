@@ -40,7 +40,7 @@
     <!-- WHY DELOG SECTION -->
 
 
-    <OurWarehouse />
+    <OurWareHouse />
     <FrequentlyAsked />
     <NewsLetter />
     <FootBar />
@@ -53,7 +53,7 @@ import NavBar from '../components/NavBar.vue'
 import Landing from '../components/Landing.vue'
 import LogisticServices from '../components/LogisticServices.vue'
 import ShipDelog from '../components/ShipDelog.vue'
-import OurWarehouse from '../components/OurWarehouse.vue'
+import OurWareHouse from '../components/OurWareHouse.vue'
 import WedLove from '../components/WedLove.vue'
 import FrequentlyAsked from '../components/FrequentlyAsked.vue'
 import NewsLetter from '../components/NewsLetter.vue'
@@ -69,7 +69,7 @@ export default {
         Landing,
         LogisticServices,
         ShipDelog,
-        OurWarehouse,
+        OurWareHouse,
         WedLove,
         FrequentlyAsked,
         NewsLetter,
