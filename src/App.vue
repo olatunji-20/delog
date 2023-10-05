@@ -9,5 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-
+html {
+  scroll-behavior: smooth;
+}
 </style>
