@@ -4,6 +4,7 @@ import SeaShipments from '../views/SeaShipments.vue'
 import AirShipments from '../views/AirShipments.vue'
 import ContactUs from '../views/ContactUs.vue'
 import Company from '../views/Company.vue'
+import Values from '../views/Values.vue'
 import BlogPost from '../views/BlogPost.vue'
 
 const router = createRouter({
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/blog-post',
       name: 'BlogPost',
       component: BlogPost
+    },
+    {
+      path: '/values',
+      name: 'Values',
+      component: Values
     }
   ],
   scrollBehavior(stand, homepage, savedPosition) {

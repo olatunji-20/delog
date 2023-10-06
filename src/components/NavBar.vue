@@ -12,8 +12,8 @@
                         <li class="py-1 text-sm hover:underline"><router-link to="/air-shipments">Air Shipments</router-link></li>
                     </ul>
                 </li>
-                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/company">Company</router-link></li>
-                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1">News</li>
+                <li class="mr-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/company">Company</router-link></li>
+                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/values">Values</router-link></li>
                 <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/blog-post">Blog</router-link></li>
             </ul>
         </div>
