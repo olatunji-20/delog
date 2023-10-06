@@ -13,10 +13,10 @@
             to the logistics market of Georgia!</p>
         <p class="text-center pt-4 px-4">Here are some reasons why we are the best choice for your logistics needs.</p>
         <div class="border-2 border-red-300 w-[22rem] h-[550px] mx-[auto] my-8 md:hidden">            
-            <img src="/img/sea.png" alt="sea-travel" class="w-[100%] h-[100%] object-cover" />
+            <img src="/img/small.png" alt="why-delog" class="w-[100%] h-[100%] object-cover" />
         </div>
         <div class="border-2 border-red-600 hidden md:block md:mx-[auto] w-[75%] h-[320px] my-12">            
-            <img src="/img/large.png" alt="sea-travel" class="w-[100%] h-[100%] object-contain" />
+            <img src="/img/large.png" alt="why-delog" class="w-[100%] h-[100%] object-contain" />
         </div>
 
         <div class="border-2 border-green-500 w-[100%] h-[auto] mb-8 flex flex-col flex-wrap md:flex-row justify-center">
@@ -44,17 +44,13 @@
     <FrequentlyAsked />
     <NewsLetter />
     <FootBar />
-    <ShipDelog />
-    <WedLove />
 </template>
 
 <script>
 import NavBar from '../components/NavBar.vue'
 import Landing from '../components/Landing.vue'
 import LogisticServices from '../components/LogisticServices.vue'
-import ShipDelog from '../components/ShipDelog.vue'
 import OurWareHouse from '../components/OurWareHouse.vue'
-import WedLove from '../components/WedLove.vue'
 import FrequentlyAsked from '../components/FrequentlyAsked.vue'
 import NewsLetter from '../components/NewsLetter.vue'
 import FootBar from '../components/FootBar.vue'
@@ -68,9 +64,7 @@ export default {
         NavBar,
         Landing,
         LogisticServices,
-        ShipDelog,
         OurWareHouse,
-        WedLove,
         FrequentlyAsked,
         NewsLetter,
         FootBar

@@ -3,13 +3,18 @@
         <div class="border border-green-400 w-[150px] h-[50px]">
             <img src="/img/delog-logo.svg" />
         </div>
-        <div class="border border-yellow-400 w-[auto] h-[35px] mt-2 hidden md:inline">
-            <ul>
-                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/">Home</router-link></li>
-                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Services</li>
-                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Company</li>
-                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">News</li>
-                <li class="inline-block px-2 mx-4 relative top-0 duration-150 cursor-pointer hover:top-1">Blog</li>
+        <div class="border border-yellow-400 w-[auto] h-[auto] mt-2 hidden md:inline">
+            <ul class="flex flex-row justify-between">
+                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/">Home</router-link></li>
+                <li class="group mx-6 relative top-0 duration-150 cursor-pointer hover:top-1">Services s
+                    <ul class="mt-3 bg-gray-100 invisible group-hover:visible">
+                        <li class="py-1 text-sm hover:underline"><router-link to="/sea-shipments">Sea Shipments</router-link></li>
+                        <li class="py-1 text-sm hover:underline"><router-link to="/air-shipments">Air Shipments</router-link></li>
+                    </ul>
+                </li>
+                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/company">Company</router-link></li>
+                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1">News</li>
+                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/blog-post">Blog</router-link></li>
             </ul>
         </div>
         <div class="border border-red-400 w-[50px] h-[50px] md:hidden"></div>
@@ -31,3 +36,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+/* .service:hover, .dropd {
+    display: block;
+} */
+</style>

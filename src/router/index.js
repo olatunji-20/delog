@@ -3,6 +3,8 @@ import HomePage from '../views/HomePage.vue'
 import SeaShipments from '../views/SeaShipments.vue'
 import AirShipments from '../views/AirShipments.vue'
 import ContactUs from '../views/ContactUs.vue'
+import Company from '../views/Company.vue'
+import BlogPost from '../views/BlogPost.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +28,16 @@ const router = createRouter({
       path: '/contact-us',
       name: 'ContactUs',
       component: ContactUs
+    },
+    {
+      path: '/company',
+      name: 'Company',
+      component: Company
+    },
+    {
+      path: '/blog-post',
+      name: 'BlogPost',
+      component: BlogPost
     }
   ],
   scrollBehavior(stand, homepage, savedPosition) {
