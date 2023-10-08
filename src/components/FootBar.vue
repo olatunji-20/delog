@@ -10,7 +10,7 @@
         <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Home</li>
         <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Services</li>
         <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Company</li>
-        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">News</li>
+        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Values</li>
         <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Blog</li>
       </ul>
     </div>

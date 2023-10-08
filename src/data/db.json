@@ -1,0 +1,13 @@
+{
+    "blogPosts": [
+        {
+            "id": 1,
+            "authorName": "Olivia Rhye",
+            "date": "20, Jan 2022",
+            "topic": "UX review presentations",
+            "sneakPeak": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+            "thumbnailUrl": "/erver",
+            "writeUp": "lorem70"            
+        }
+    ]
+}

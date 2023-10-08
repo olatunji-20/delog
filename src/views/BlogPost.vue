@@ -6,11 +6,11 @@
              Subscribe for updates in your inbox every week.
         </p>
 
-        <div class="border-2 border-green-400 w-[80%] h-[50px] mx-[auto] mt-8 md:w-[50%]"></div>
+        <!-- <div class="border-2 border-green-400 w-[80%] h-[50px] mx-[auto] mt-8 md:w-[50%]"></div> -->
 
         <hr class="border border-gray-300 w-[90%] mx-[auto] my-8" />
 
-        <div class="border-4 border-purple-400 w-[100%] h-[1000px] mx-[auto] mt-12 p-2 md:w-[90%]">
+        <div class="border-4 border-purple-400 w-[100%] h-[auto] mx-[auto] mt-12 md:w-[100%]">
             <Blogs />
         </div>
     </div>

@@ -7,9 +7,9 @@
             <ul class="flex flex-row justify-between">
                 <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/">Home</router-link></li>
                 <li class="group mx-6 relative top-0 duration-150 cursor-pointer hover:top-1">Services s
-                    <ul class="mt-3 bg-gray-100 invisible group-hover:visible">
-                        <li class="py-1 text-sm hover:underline"><router-link to="/sea-shipments">Sea Shipments</router-link></li>
-                        <li class="py-1 text-sm hover:underline"><router-link to="/air-shipments">Air Shipments</router-link></li>
+                    <ul class="mt-3 bg-gray-200 invisible border shadow-md group-hover:visible">
+                        <li class="py-1 text-sm hover:bg-gray-50"><router-link to="/sea-shipments">Sea Shipments</router-link></li>
+                        <li class="py-1 text-sm hover:bg-gray-50"><router-link to="/air-shipments">Air Shipments</router-link></li>
                     </ul>
                 </li>
                 <li class="mr-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/company">Company</router-link></li>
