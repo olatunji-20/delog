@@ -1,10 +1,8 @@
 <template>
   <div class="border-4 border-green-900 pt-8 w-[100%] h-[auto] flex flex-col flex-wrap md:pt-12 md:h-[870px] md:flex-row md:justify-center">
     <div class="border-4 border-red-500 w-[100%] h-[800px] md:h-[760px] md:w-[36%]">
-      <div class="border-2 border-purple-400 w-[100%] h-[400px] p-2">
-        <div class="border-2 border-red-500 w-[100%] h-[100%] mx-[auto]">
-            <img src="/img/container.png" alt="flight-travel" class="w-[100%] h-[100%] object-cover" />
-          </div>
+      <div class="border-4 border-blue-800 w-[100%] h-[400px] p-2">
+        <Carousel />
       </div>
       <div class="border-2 border-green-400 w-[100%] h-[auto] p-2">
         <div class="border-2 border-purple-500 w-[100%] h-[auto] mx-[auto]">
@@ -87,8 +85,16 @@
 </template>
 
 <script>
+import Carousel from './Carousel.vue'
+
 export default {
-    name: 'Landing'
+    name: 'Landing',
+    setup() {
+
+    },
+    components: {
+      Carousel
+    }
 
 }
 </script>
