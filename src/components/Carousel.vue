@@ -14,13 +14,10 @@
             pauseOnMouseEnter: true
         }"
     >
-        <swiper-slide v-for="image in carouselImages" :key="image" class="border-2 border-red-500 w-[100%] h-[100%] mx-[auto]">
-            <img :src="image" alt="flight-travel" class="w-[100%] h-[100%] object-cover" />
+        <swiper-slide v-for="image in carouselImages" :key="image" class="border-4 border-yellow-500 w-[100%] h-[100%] mx-[auto]">
+            <img :src="image" alt="landing page" class="w-[100%] h-[100%] object-cover" />
         </swiper-slide>
     </swiper>
-    <!-- <div class="border-2 border-red-500 w-[100%] h-[100%] mx-[auto]">
-        <img src="/img/container.png" alt="flight-travel" class="w-[100%] h-[100%] object-cover" />
-    </div> -->
 </template>
 
 <script>

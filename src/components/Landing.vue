@@ -1,7 +1,7 @@
 <template>
   <div class="border-4 border-green-900 pt-8 w-[100%] h-[auto] flex flex-col flex-wrap md:pt-12 md:h-[870px] md:flex-row md:justify-center">
     <div class="border-4 border-red-500 w-[100%] h-[800px] md:h-[760px] md:w-[36%]">
-      <div class="border-4 border-blue-800 w-[100%] h-[400px] p-2">
+      <div class="border-4 border-blue-800 w-[100%] h-[400px] p-1">
         <Carousel />
       </div>
       <div class="border-2 border-green-400 w-[100%] h-[auto] p-2">
