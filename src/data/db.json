@@ -1,13 +1,41 @@
 {
     "blogPosts": [
         {
-            "id": 1,
-            "authorName": "Olivia Rhye",
-            "date": "20, Jan 2022",
-            "topic": "UX review presentations",
-            "sneakPeak": "How do you create compelling presentations that wow your colleagues and impress your managers?",
-            "thumbnailUrl": "/erver",
-            "writeUp": "lorem70"            
+          "id": 1,
+          "authorName": "Olirejgivia Rhye",
+          "date": "20, Jan 2022",
+          "topic": "UX review presentations",
+          "sneakPeak": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+          "thumbnailUrl": "/erver",
+          "writeUp": "lorem70"            
+        },
+        {
+          "id": 2,
+          "authorName": "Olivjerivervia Rhye",
+          "date": "20, Jan 2022",
+          "topic": "UX review presentations",
+          "sneakPeak": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+          "thumbnailUrl": "/erver",
+          "writeUp": "lorem70"            
+        },
+        {
+          "id": 3,
+          "authorName": "Ovirlivia Rhye",
+          "date": "20, Jan 2022",
+          "topic": "UX review presentations",
+          "sneakPeak": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+          "thumbnailUrl": "/erver",
+          "writeUp": "lorem70"            
+        },
+        {
+          "id": 4,
+          "authorName": "Olknvjerivia Rhye",
+          "date": "20, Jan 2022",
+          "topic": "UX review presentations",
+          "sneakPeak": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+          "thumbnailUrl": "/erver",
+          "writeUp": "lorem70"            
         }
-    ]
+      ]
 }
+

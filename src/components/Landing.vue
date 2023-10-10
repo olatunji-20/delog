@@ -6,7 +6,9 @@
       </div>
       <div class="border-2 border-green-400 w-[100%] h-[auto] p-2">
         <div class="border-2 border-purple-500 w-[100%] h-[auto] mx-[auto]">
-          <div class="border border-red-400 w-[100%] h-[150px]"></div>
+          <div class="border border-red-400 w-[100%] h-[150px]">            
+            <img src="/img/ship.png" alt="ship" class="w-[100%] h-[100%] object-contain" />
+          </div>
           <p class="pt-4 text-lg">No money, no problem. Untitled is a next-generation financial technology company in the process.</p>
           <div class="border-2 border-red-400 w-[90%] h-[auto] mt-6 md:w-[90%]">
             <div class="border-2 border-blue-400 w-[100%] h-[auto] py-2 text-center text-blue-400 md:w-[43%] md:inline-block"><p>Get the price</p></div>
