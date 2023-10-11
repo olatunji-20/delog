@@ -1,16 +1,18 @@
 <template>
   <div class="border-4 border-blue-500 w-[100%] h-[auto] flex flex-row flex-wrap justify-around">
 
-    <div v-for="item in displayedRecords" :key="item.id" class="border-2 border-red-500 w-[350px] h-[360px] my-2">
-      <h1>{{ item.authorName }}</h1>
-      <h1>{{ item.date }}</h1>
-      <h1>{{ item.topic }}</h1>
-      <h1>{{ item.sneakPeak }}</h1>
+    <div v-for="item in displayedPosts" :key="item.id" class="border-2 border-red-500 w-[350px] h-[350px] my-2">
+      <div class="border border-blue-400 w-[100%] h-[200px] mb-5"></div>
+      <p class="text-md text-blue-400 inline">{{ item.date }}</p>
+      <p class="inline border border-blue-700 mx-2 rounded-full"></p>
+      <p class="text-md text-blue-400 inline">{{ item.authorName }}</p>
+      <h1 class="font-bold my-2">{{ item.topic }}</h1>
+      <h1 class="text-sm text-gray-700">{{ item.sneakPeak }}</h1>
     </div>
-    <div class="border-2 border-red-800 w-[80%] h-[50px] mt-8">
+    <div class="border border-red-500 w-[100%] h-[auto] mt-8 text-center">
       <vue-awesome-paginate
         :total-items="blogPosts.length"
-        :items-per-page="3"
+        :items-per-page="perPage"
         v-model="currentPage"
         :on-click="onClickHandler"
       />
@@ -19,13 +21,14 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 
 export default {
   name: 'Blogs',
   setup() {
     const currentPage = ref(1);
+    const perPage = ref(9);
     const onClickHandler = (page) => {
       console.log(page)
     };
@@ -138,20 +141,19 @@ export default {
           thumbnailUrl: "/erver",
           writeUp: "lorem70"            
         }
-      ])
+      ]);
+      const displayedPosts = computed(() => {
+        const startIndex = perPage.value * (currentPage.value - 1);
+        const endIndex = startIndex + perPage.value;
+        return blogPosts.value.slice(startIndex, endIndex);
+      });
+
     return {
       currentPage,
+      perPage,
       onClickHandler,
+      displayedPosts,
       blogPosts
-    }
-  },
-  computed: {
-    displayedRecords() {
-      // const startIndex = this.perPage * (this.page - 1);
-      const startIndex = 3 * (this.currentPage - 1);
-      // const endIndex = startIndex + this.perPage;
-      const endIndex = startIndex + 2;
-      return this.blogPosts.slice(startIndex, endIndex);
     }
   },
   components: {}
@@ -162,11 +164,13 @@ export default {
 .pagination-container {
     display: flex;
     column-gap: 10px;
+    border: 2px solid purple;
+    margin: 0px auto;
   }
   .paginate-buttons {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
     cursor: pointer;
     background-color: rgb(242, 242, 242);
     border: 1px solid rgb(217, 217, 217);

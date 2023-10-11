@@ -14,9 +14,9 @@
                         <li class="py-1 text-sm hover:bg-gray-50"><router-link to="/air-shipments">Air Shipments</router-link></li>
                     </ul>
                 </li>
-                <li class="mr-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/company">Company</router-link></li>
+                <li class="mr-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/blog-post">Blog</router-link></li>
+                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/company">Company</router-link></li>
                 <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/values">Values</router-link></li>
-                <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/blog-post">Blog</router-link></li>
             </ul>
         </div>
         <div class="border border-red-400 w-[50px] h-[50px] md:hidden"></div>
