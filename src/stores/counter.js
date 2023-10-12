@@ -1,12 +1,29 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
-  }
+export const useBlogStore = defineStore('blogStore', {
+  state: () => {
+    return {
+      blogs: [],
+      blog: {}
+    }
+  },
 
-  return { count, doubleCount, increment }
-})
+  actions: {
+    async getBlogs() {
+      const res = await fetch("http://localhost:3000/blog-posts")
+      const blogs = await res.json()
+
+      this.blogs = blogs
+      console.log("qqqqqqq",blogs)
+  },
+  async getBlog(id) {
+    const res = await fetch("http://localhost:3000/blog-posts/" + id)
+    const product = await res.json()
+
+    this.blog = product
+}
+  
+}
+}
+)

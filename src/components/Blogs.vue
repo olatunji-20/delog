@@ -13,7 +13,7 @@
     </div>
     <div class="border border-red-500 w-[100%] h-[auto] mt-8 text-center">
       <vue-awesome-paginate
-        :total-items="blogPosts.length"
+        :total-items="blogStore.blogs.length"
         :items-per-page="perPage"
         v-model="currentPage"
         :on-click="onClickHandler"
@@ -24,138 +24,37 @@
 
 <script>
 import { ref, computed } from 'vue';
-
+import { useBlogStore } from '../stores/counter';
 
 export default {
   name: 'Blogs',
   setup() {
+    const blogStore = useBlogStore();
+    blogStore.getBlogs();
+
+    // const blogPosts = blogStore.blogs;
+
     const currentPage = ref(1);
     const perPage = ref(9);
     const onClickHandler = (page) => {
       console.log(page)
     };
-    const blogPosts = ref([
-        {
-          id: 1,
-          authorName: "Olirejgivia 111 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 2,
-          authorName: "Olivjerivervia 222 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 3,
-          authorName: "wunmi 333 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 4,
-          authorName: "sheriff 444 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 5,
-          authorName: "Olirejgivia 555 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 6,
-          authorName: "Olivjerivervia 666 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 7,
-          authorName: "wunmi 777 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 8,
-          authorName: "sheriff 888 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 9,
-          authorName: "Olirejgivia 999 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 10,
-          authorName: "Olivjerivervia 101010Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 11,
-          authorName: "wunmi 111111 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        },
-        {
-          id: 12,
-          authorName: "sheriff 11212 Rhye",
-          date: "20, Jan 2022",
-          topic: "UX review presentations",
-          sneakPeak: "How do you create compelling presentations that wow your colleagues and impress your managers?",
-          thumbnailUrl: "/erver",
-          writeUp: "lorem70"            
-        }
-      ]);
+    // const blogPosts = ref([
+        
+    //   ]);
       const displayedPosts = computed(() => {
         const startIndex = perPage.value * (currentPage.value - 1);
         const endIndex = startIndex + perPage.value;
-        return blogPosts.value.slice(startIndex, endIndex);
+        return blogStore.blogs.slice(startIndex, endIndex);
       });
 
     return {
       currentPage,
       perPage,
       onClickHandler,
-      displayedPosts,
-      blogPosts
+      blogStore,
+      // blogPosts,
+      displayedPosts
     }
   },
   components: {}
