@@ -7,11 +7,11 @@
     </div>
     <div class="border border-green-600 w-[100%] h-[auto] py-8 pl-6 md:w-[79%] pr-12">
       <ul class="md:float-right">
-        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Home</li>
-        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Services</li>
-        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Company</li>
-        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Values</li>
-        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2">Blog</li>
+        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2"><router-link to="/">Home</router-link></li>
+        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2"><router-link to="/sea-shipments">Services</router-link></li>
+        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2"><router-link to="/blog-post">Blog</router-link></li>
+        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2"><router-link to="/company">Company</router-link></li>
+        <li class="leading-8 md:inline-block px-4 cursor-pointer relative left-0 duration-150 hover:left-2"><router-link to="/values">Values</router-link></li>
       </ul>
     </div>
     <div class="border-2 border-green-600 w-[100%] h-[auto] py-6">

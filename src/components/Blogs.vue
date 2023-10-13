@@ -32,16 +32,12 @@ export default {
     const blogStore = useBlogStore();
     blogStore.getBlogs();
 
-    // const blogPosts = blogStore.blogs;
 
     const currentPage = ref(1);
     const perPage = ref(9);
     const onClickHandler = (page) => {
       console.log(page)
     };
-    // const blogPosts = ref([
-        
-    //   ]);
       const displayedPosts = computed(() => {
         const startIndex = perPage.value * (currentPage.value - 1);
         const endIndex = startIndex + perPage.value;
@@ -53,7 +49,6 @@ export default {
       perPage,
       onClickHandler,
       blogStore,
-      // blogPosts,
       displayedPosts
     }
   },

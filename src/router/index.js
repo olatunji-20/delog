@@ -17,7 +17,7 @@ const router = createRouter({
       component: HomePage
     },
     {
-      path: '/sea-shipmentS',
+      path: '/sea-shipments',
       name: 'SeaShipments',
       component: SeaShipments
     },
