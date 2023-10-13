@@ -28,7 +28,7 @@
                     However, sea transport remains the ideal vehicle for long distances and large international loads, of course, if the company has a turnover that covers the costs of the service.
                 </p>
                 <h3 class="font-bold text-xl pt-6">Short list of our shipping services:</h3>
-                <ul class="relative left-4 list-disc">
+                <ul class="pl-6 list-disc">
                     <li class="">Transportation from all countries of the world to Poti and Batumi ports, and inland transport within the Transcaucasia</li>
                     <li class="">Bulk cargo shipment</li>
                     <li class="">Direct representative activity in Poti and Batumi ports</li>

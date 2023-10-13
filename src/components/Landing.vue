@@ -60,26 +60,10 @@
         <h1 class="font-bold text-3xl">BLOG & NEWS</h1>
         <p class="pt-4 md:pt-2">Best source of information for tips.</p>
         <div class="border-2 border-red-400 w-[100%] h-[330px] my-8 overflow-auto md:h-[250px] md:my-4">
-          <div class="border-4 border-purple-400 w-[950px] h-[auto] flex flex-row flex-nowrap justify-between md:h-[245px] md:w-[100%]">
-            <div class="border-2 border-green-400 w-[270px] relative h-[300px] p-1 md:h-[240px] md:w-[210px]">
-              <div class="border border-blue-400 w-[100%] h-[160px] md:h-[120px]"></div>
-              <p class="text-blue-400 text-sm pt-2">Aug 24 2023</p>
-              <p class="text-sm pt-3 font-bold leading-1">Riding the blockchain wave with CargoX's blockchain.</p>              
-            </div>
-            <div class="border-2 border-green-400 w-[270px] relative h-[300px] p-1 md:h-[240px] md:w-[210px]">
-              <div class="border border-blue-400 w-[100%] h-[160px] md:h-[120px]"></div>
-              <p class="text-blue-400 text-sm pt-2">May 19 2023</p>
-              <p class="text-sm pt-3 font-bold leading-1">Migrating to Linear 101.</p>              
-            </div>
-            <div class="border-2 border-green-400 w-[270px] relative h-[300px] p-1 md:h-[240px] md:w-[210px]">
-              <div class="border border-blue-400 w-[100%] h-[160px] md:h-[120px]"></div>
-              <p class="text-blue-400 text-sm pt-2">Apr 18 2023</p>
-              <p class="text-sm pt-3 font-bold leading-1">Building your API stack.</p>              
-            </div>
-          </div>
+          <LandingBlog />
         </div>
         <div class="border-2 border-blue-400 w-[100%] text-center py-2 relative md:w-[120px] md:float-right md:bottom-full md:mt-4">
-          <p>See all</p>
+          <router-link to="/blog-post"><p>See all</p></router-link>
         </div>
       </div>
     </div>
@@ -87,7 +71,8 @@
 </template>
 
 <script>
-import Carousel from './Carousel.vue'
+import Carousel from './Carousel.vue';
+import LandingBlog from './LandingBlog.vue';
 
 export default {
     name: 'Landing',
@@ -95,7 +80,8 @@ export default {
 
     },
     components: {
-      Carousel
+      Carousel,
+      LandingBlog
     }
 
 }

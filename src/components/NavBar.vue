@@ -19,22 +19,45 @@
                 <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/values">Values</router-link></li>
             </ul>
         </div>
-        <div class="border border-red-400 w-[50px] h-[50px] md:hidden"></div>
+        <div @click="showMenu" class="border border-red-400 w-[50px] h-[50px] bg-blue-400 md:hidden"></div>
         <div class="border border-blue-400 w-[180px] h-[50px] hidden md:flex justify-between ">
             <div class="border border-red-400 w-[auto] h-[auto]">
                 <router-link to="/contact-us"><p class="py-2 px-6">Contact</p></router-link>
             </div>
-            <div class="border border-red-400 w-[45px] h-[50px]"></div>
+            <div class="border border-red-400 w-[45px] h-[50px]">            
+                <img src="/img/gegse.png" alt="flag" class="w-[100%] h-[100%] object-cover" />
+            </div>
 
         </div>
+    </div>
+    <div v-show="menu" class="border-2 border-green-500 w-[250px] h-[350px] py-4 absolute bg-gray-600 right-0 z-10 md:hidden">
+        <ul class="text-xl">
+            <li class="leading-8 hover:bg-gray-100"><router-link to="/">Home</router-link></li>
+            <li class="leading-8 hover:bg-gray-100"><router-link to="/sea-shipments">Sea Shipments</router-link></li>
+            <li class="leading-8 hover:bg-gray-100"><router-link to="/air-shipments">Air Shipments</router-link></li>
+            <li class="leading-8 hover:bg-gray-100"><router-link to="/blog-post">Blog</router-link></li>
+            <li class="leading-8 hover:bg-gray-100"><router-link to="/company">Company</router-link></li>
+            <li class="leading-8 hover:bg-gray-100"><router-link to="/values">Values</router-link></li>
+            <li class="leading-8 hover:bg-gray-100"><router-link to="/contact-us">Contact</router-link></li>
+        </ul>
     </div>
 </template>
 
 <script>
+import { ref } from 'vue';
 export default {
     name: 'NavBar',
     setup() {
+        const menu = ref(false);
 
+        const showMenu = () => {
+            menu.value = !menu.value;
+        }
+
+        return {
+            menu,
+            showMenu
+        }
     }
 }
 </script>

@@ -4,7 +4,14 @@
                 <p class="font-bold inline-block">Is STANDARD there a free trial available?</p>
                 <p @click="question1" class="cursor-pointer border border-blue-500 font-bold text-2xl relative bottom-2 float-right inline-block" v-text="showQues1 ? '-' : '+'">
                 </p>
-                <p v-show="showQues1" class="border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nihil doloremque fugit?</p>
+                <transition enter-active-class="transition-top duration-300"
+                enter-from-class="top-0"
+                enter-to-class="top-40"
+                leave-active-class="transition-top duration-300"
+                leave-from-class="top-40"
+                leave-to-class="top-0">
+                    <p v-show="showQues1" class="border relative top-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nihil doloremque fugit?</p>
+                </transition>
             </div>
             <div class="border border-green-400 w-[95%] h-[auto] mx-auto my-4 text-left md:w-[60%]">
                 <p class="font-bold inline-block">Is there a free trial available?</p>
