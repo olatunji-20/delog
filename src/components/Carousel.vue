@@ -37,8 +37,9 @@ export default {
     setup() {
         const carouselImages = ref([
             '/img/container.png',
-            '/img/apple.png',
+            // '/img/apple.png',
             '/img/flight.png',
+            '/img/sea.png'
         ]);
         const onSwiper = (swiper) => {
             console.log(swiper);

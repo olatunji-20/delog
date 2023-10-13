@@ -11,7 +11,7 @@
     <p class="text-center pt-4 md:px-64">Our philosophy is simple - hire a team of diverse, passionate people and foster a culture that
       empowers you to do your best work.</p>
     <div class="border-4 border-purple-400 w-[100%] h-[auto] mx-auto mt-8 overflow-auto md:mt-12 md:p-4 md:w-[95%]">
-      <Team :team="teamMembers" />
+      <Team :team="blogStore.teamMembers" />
     </div>
   </div>
   <!-- COMPLETED SECTION -->
@@ -42,61 +42,15 @@ import Team from '../components/Team.vue'
 import OurWareHouse from '../components/OurWareHouse.vue'
 import ShipDelog from '../components/ShipDelog.vue'
 import FootBar from '../components/FootBar.vue'
+import { useBlogStore } from '../stores/counter'
 export default {
     name: 'Company',
     setup() {
-      const teamMembers = ref([
-        {
-          id: 1,
-          name: "Olivia Rhye",
-          position: "Founder & CEO",
-          imageUrl: "/img/apple.png"
-        },
-        {
-          id: 2,
-          name: "Phoenix Baker",
-          position: "Engineering Manager",
-          imageUrl: "/img/apple.png"
-        },
-        {
-          id: 3,
-          name: "Lana Steiner",
-          position: "Product Manager",
-          imageUrl: "/img/apple.png"
-        },
-        {
-          id: 4,
-          name: "Demi Wilkinson",
-          position: "Frontend Developer",
-          imageUrl: "/img/apple.png"
-        },
-        {
-          id: 5,
-          name: "Candice Wu",
-          position: "Backend Developer",
-          imageUrl: "/img/apple.png"
-        },
-        {
-          id: 6,
-          name: "Natali Craig",
-          position: "Product Designer",
-          imageUrl: "/img/apple.png"
-        },
-        {
-          id: 7,
-          name: "Drew Cano",
-          position: "UX Researcher",
-          imageUrl: "/img/apple.png"
-        },
-        {
-          id: 8,
-          name: "Orlando Diggs",
-          position: "Customer Success",
-          imageUrl: "/img/apple.png"
-        },
-      ])
+      const blogStore = useBlogStore();
+      blogStore.getTeamMembers();
+
         return {
-          teamMembers
+          blogStore
         }
     },
     components: {

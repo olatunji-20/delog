@@ -8,7 +8,7 @@
         <p class="text-sm text-gray-700 md:w-[600px]">{{ blogStore.blog.sneakPeak }}</p>
 
         <div class="border-2 border-blue-400 w-[100%] h-[250px] my-12 md:h-[500px]">
-            <img src="/img/ware.png" :alt="blogStore.blog.topic" class="w-[100%] h-[100%] object-cover" />
+            <img :src="blogStore.blog.thumbnailUrl" :alt="blogStore.blog.topic" class="w-[100%] h-[100%] object-cover" />
         </div>
 
         <BlogStory />

@@ -3,7 +3,9 @@
 
     <div v-for="item in displayedPosts" :key="item.id" class="border-2 border-red-500 w-[350px] h-[350px] my-2">
       <router-link :to="'/blogs-view/' + item.id">
-        <div class="border border-blue-400 w-[100%] h-[200px] mb-5"></div>
+        <div class="border border-blue-400 w-[100%] h-[200px] mb-5">
+            <img :src="item.thumbnailUrl" :alt="item.topic" class="w-[100%] h-[100%] object-cover" />
+        </div>
         <p class="text-md text-blue-400 inline">{{ item.date }}</p>
         <p class="inline border border-blue-700 mx-2 rounded-full"></p>
         <p class="text-md text-blue-400 inline">{{ item.authorName }}</p>
