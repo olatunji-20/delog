@@ -1,11 +1,11 @@
 <template>
-    <div class="border-2 border-red-400 w-[100%] h-[6rem] flex justify-between py-5 px-6 md:px-12">
+    <div class="border-gray-300 w-[100%] h-[6rem] shadow-lg border-b-2 bg-[#edeff8] flex justify-between py-5 px-6 md:px-12">
         <router-link to="/">
-            <div class="border border-green-400 w-[150px] h-[50px]">
+            <div class="w-[9.375rem] h-[3.125rem]">
                 <img src="/img/delog-logo.svg" />
             </div>
         </router-link>
-        <div class="border border-yellow-400 w-[auto] h-[auto] mt-2 hidden md:inline">
+        <div class="w-[auto] h-[auto] mt-2 hidden md:inline">
             <ul class="flex flex-row justify-between">
                 <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/">Home</router-link></li>
                 <li class="group mx-6 relative top-0 duration-150 cursor-pointer hover:top-1">Services s
@@ -19,18 +19,20 @@
                 <li class="mx-6 relative top-0 duration-150 cursor-pointer hover:top-1"><router-link to="/values">Values</router-link></li>
             </ul>
         </div>
-        <div @click="showMenu" class="border border-red-400 w-[50px] h-[50px] bg-blue-400 md:hidden"></div>
-        <div class="border border-blue-400 w-[180px] h-[50px] hidden md:flex justify-between ">
-            <div class="border border-red-400 w-[auto] h-[auto]">
+        <div @click="showMenu" class="w-[3.125rem] h-[3.125rem] rounded-lg md:hidden">
+            <img src="/img/button.svg" class="w-[100%] h-[100%] object-cover" />
+        </div>
+        <div class="w-[11.25rem] h-[3.125rem] hidden md:flex justify-between ">
+            <div class="border border-[#0063f7] w-[auto] h-[auto] rounded-md text-[#0063f7] cursor-pointer duration-200 hover:bg-[#0063f7] hover:text-white">
                 <router-link to="/contact-us"><p class="py-2 px-6">Contact</p></router-link>
             </div>
-            <div class="border border-red-400 w-[45px] h-[50px]">            
-                <img src="/img/gegse.png" alt="flag" class="w-[100%] h-[100%] object-cover" />
+            <div class="border border-gray-400 w-[2.8125rem] h-[3.125rem] p-1">            
+                <img src="/img/group.svg" alt="flag" class="w-[100%] h-[100%] rounded-full object-cover" />
             </div>
 
         </div>
     </div>
-    <div v-show="menu" class="border-2 border-green-500 w-[250px] h-[350px] py-4 absolute bg-gray-600 right-0 z-10 md:hidden">
+    <div v-show="menu" class="border-2 border-gray-400 w-[250px] h-[350px] py-4 absolute bg-gray-200 right-0 z-10 md:hidden">
         <ul class="text-xl">
             <li class="leading-8 hover:bg-gray-100"><router-link to="/">Home</router-link></li>
             <li class="leading-8 hover:bg-gray-100"><router-link to="/sea-shipments">Sea Shipments</router-link></li>

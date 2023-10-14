@@ -1,9 +1,8 @@
 <template>
-  <div class="border-4 border-blue-500 w-[100%] h-[auto] flex flex-row flex-wrap justify-around">
-
-    <div v-for="item in displayedPosts" :key="item.id" class="border-2 border-red-500 w-[350px] h-[350px] my-2 relative duration-150 bottom-0 hover:bottom-1 hover:shadow-lg">
+  <div class="w-[100%] h-[auto] flex flex-row flex-wrap justify-around">
+    <div v-for="item in displayedPosts" :key="item.id" class="border border-gray-300 rounded-lg w-[21.875rem] h-[21.875rem] my-2 relative duration-150 bottom-0 hover:bottom-1 hover:shadow-lg">
       <router-link :to="'/blogs-view/' + item.id">
-        <div class="border border-blue-400 w-[100%] h-[200px] mb-5 overflow-hidden">
+        <div class="w-[100%] h-[200px] rounded-lg mb-5 overflow-hidden">
             <img :src="item.thumbnailUrl" :alt="item.topic" class="w-[100%] h-[100%] object-cover duration-150 hover:scale-105" />
         </div>
         <p class="text-md text-blue-400 inline">{{ item.date }}</p>
@@ -13,7 +12,7 @@
         <h1 class="text-sm text-gray-700">{{ item.sneakPeak }}</h1>
       </router-link>
     </div>
-    <div class="border border-red-500 w-[100%] h-[auto] mt-8 text-center">
+    <div class="w-[100%] h-[auto] mt-8 text-center">
       <vue-awesome-paginate
         :total-items="blogStore.blogs.length"
         :items-per-page="perPage"
@@ -62,7 +61,7 @@ export default {
 .pagination-container {
     display: flex;
     column-gap: 10px;
-    border: 2px solid purple;
+    border: 1px solid purple;
     margin: 0px auto;
   }
   .paginate-buttons {

@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <div class="border-4 border-red-400 w-[100%] h-[auto] py-12 px-4 md:p-16">
+  <div class="w-[100%] h-[auto] py-12 px-4 md:p-16">
     <h1 class="font-bold text-3xl text-center">BLOGS & INTERVIEWS</h1>
     <p class="text-center pt-4 md:px-72">
       The blog is the best source of information for interviews, tips, guides,
@@ -8,12 +8,10 @@
       every week.
     </p>
 
-    <!-- <div class="border-2 border-green-400 w-[80%] h-[50px] mx-[auto] mt-8 md:w-[50%]"></div> -->
-
     <hr class="border border-gray-300 w-[90%] mx-[auto] my-8" />
 
     <div
-      class="border-4 border-purple-400 w-[100%] h-[auto] mx-[auto] mt-12 md:w-[100%]"
+      class="w-[100%] h-[auto] mx-[auto] mt-12 md:w-[100%]"
     >
       <Blogs />
     </div>

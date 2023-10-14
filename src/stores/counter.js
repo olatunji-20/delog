@@ -14,7 +14,7 @@ export const useBlogStore = defineStore('blogStore', {
   actions: {
     async getBlogs() {
       try {
-        const res = await axios.get("http://localhost:3000/blog-posts");
+        const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/delog-api/blog-posts");
         this.blogs = res.data;
       } catch (err) {
         console.log("ERROR IN FECTHING BLOGS", err);
@@ -22,7 +22,7 @@ export const useBlogStore = defineStore('blogStore', {
     },
     async getBlog(id) {
       try {
-        const res = await axios.get("http://localhost:3000/blog-posts/" + id);
+        const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/delog-api/blog-posts/" + id);
         const singleBlog = await res.data;
         this.blog = singleBlog
       } catch (err) {
@@ -31,7 +31,7 @@ export const useBlogStore = defineStore('blogStore', {
     },
     async getTeamMembers() {
       try {
-        const res = await axios.get("http://localhost:3000/team-members");
+        const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/delog-api/team-members");
         this.teamMembers = res.data;
       } catch (err) {
         console.log("ERROR IN FECTHING TEAM MEMBERS", err);

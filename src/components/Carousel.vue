@@ -1,5 +1,5 @@
 <template>
-    <swiper class="border-2 border-red-500 w-[100%] h-[100%] mx-[auto]"
+    <swiper class="w-[100%] h-[100%] mx-[auto]"
         :modules="modules"
         :slides-per-page="1"
         :space-between="20"
@@ -14,7 +14,7 @@
             pauseOnMouseEnter: true
         }"
     >
-        <swiper-slide v-for="image in carouselImages" :key="image" class="border-4 border-yellow-500 w-[100%] h-[100%] mx-[auto]">
+        <swiper-slide v-for="image in carouselImages" :key="image" class="bg-[#dbdff0] w-[100%] h-[100%] mx-[auto]">
             <img :src="image" alt="landing page" class="w-[100%] h-[100%] object-cover" />
         </swiper-slide>
     </swiper>

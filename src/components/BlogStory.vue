@@ -1,11 +1,11 @@
 <template>
-  <div class="border-2 border-green-400 w-[100%] h-[auto] my-16">
+  <div class="w-[100%] h-[auto] my-16">
     <h2 class="font-bold text-xl my-3">Introduction</h2>
     <p class="my-4 text-gray-700">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem aperiam fuga animi perspiciatis ducimus consequuntur ratione officia aut iure? Quo corporis nesciunt doloribus sequi earum. Necessitatibus, dolore? Aut dignissimos mollitia et voluptate obcaecati, cumque a ad reprehenderit in, est ea perferendis temporibus possimus accusamus quas molestias impedit iure ipsa expedita.</p>
     <p class="my-4 text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem, ipsum dolor. Dolorum nisi labore magni voluptatem eveniet? Culpa non eaque sequi perferendis. Deleniti magnam commodi quos officia dolores alias tempora ab tempore ullam itaque delectus praesentium nihil iure ex illum minus laudantium porro nemo iusto, ea nesciunt. Fuga illo sint necessitatibus repudiandae voluptate ducimus nobis velit.</p>
 
-    <div class="border-2 border-blue-400 w-[80%] h-[200px] my-12 mx-[auto] md:h-[400px]">
-        <img src="/img/ware.png" alt="sub-image" class="w-[100%] h-[100%] object-cover" />
+    <div class="w-[80%] h-[12.5rem] my-12 mx-[auto] md:w-[65%] md:h-[21rem]">
+        <img src="/img/fam.png" alt="sub-image" class="w-[100%] h-[100%] object-cover" />
     </div>
 
     <p class="my-4 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae incidunt ab ratione optio, ex maxime beatae amet cum porro quas dignissimos laborum nemo aliquam vero est illo. Dolor voluptate distinctio iste consectetur beatae est tempore maiores minus eos incidunt dolorum iure, ut vel asperiores nulla placeat ducimus ab? Iusto, dolorum ducimus.</p>
