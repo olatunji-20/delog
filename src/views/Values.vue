@@ -7,7 +7,7 @@
 
         <div class="w-[100%] h-[auto] mt-20">
             <div class="w-[100%] h-[auto] mb-4 flex flex-col justify-between md:flex-row md:mb-12 md:h-[25rem]">
-                <div class="w-[100%] h-[auto] px-2 py-8 md:py-2 md:w-[44%] md:h-[100%]">
+                <div class="w-[100%] h-[auto] px-2 py-8 md:py-2 md:w-[44%] md:h-[100%]"  data-aos="fade-in">
                     <div class="bg-[#edeff8] p-2 w-[3.75rem] h-[3.75rem] rounded-full my-4">            
                         <img src="/img/chart-breakout.svg" alt="flag" class="w-[100%] h-[100%] object-cover" />
                     </div>
@@ -22,15 +22,15 @@
                         <li class="font-bold text-sm">Fulfillment of the agreed issue</li>
                     </ul>
                 </div>
-                <div class="w-[100%] rounded-lg h-[18.75rem] md:w-[44%] md:h-[100%]">            
+                <div class="w-[100%] rounded-lg h-[18.75rem] md:w-[44%] md:h-[100%]" data-aos="fade-up">            
                     <img src="/img/value3.png" alt="value3" class="w-[100%] h-[100%] rounded-lg object-cover" />
                 </div>
             </div>
             <div class="w-[100%] h-[auto] mb-4 flex flex-col-reverse justify-between md:flex-row md:mb-12 md:h-[25rem]">
-                <div class="w-[100%] h-[18.75rem] rounded-lg md:w-[44%] md:h-[100%]">            
+                <div class="w-[100%] h-[18.75rem] rounded-lg md:w-[44%] md:h-[100%]" data-aos="fade-up">            
                     <img src="/img/value1.png" alt="value1" class="w-[100%] h-[100%] rounded-lg object-cover" />
                 </div>
-                <div class="w-[100%] h-[auto] px-2 py-8 md:py-2 md:w-[44%] md:h-[100%]">
+                <div class="w-[100%] h-[auto] px-2 py-8 md:py-2 md:w-[44%] md:h-[100%]" data-aos="fade-in">
                     <div class="bg-[#edeff8] p-2 w-[3.75rem] h-[3.75rem] rounded-full my-4">            
                         <img src="/img/zap-fast.svg" alt="flag" class="w-[100%] h-[100%] object-cover" />
                     </div>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="w-[100%] h-[auto] mb-4 flex flex-col justify-between md:flex-row md:mb-12 md:h-[25rem]">
-                <div class="w-[100%] h-[auto] px-2 py-8 md:py-2 md:w-[44%] md:h-[100%]">
+                <div class="w-[100%] h-[auto] px-2 py-8 md:py-2 md:w-[44%] md:h-[100%]"  data-aos="fade-in">
                     <div class="bg-[#edeff8] p-2 w-[3.75rem] h-[3.75rem] rounded-full my-4">            
                         <img src="/img/message-chat.svg" alt="flag" class="w-[100%] h-[100%] object-cover" />
                     </div>
@@ -61,7 +61,7 @@
                         <li class="font-bold text-sm">We have experienced and reliable partners.</li>
                     </ul>
                 </div>
-                <div class="w-[100%] h-[18.75rem] rounded-lg md:w-[44%] md:h-[100%]">            
+                <div class="w-[100%] h-[18.75rem] rounded-lg md:w-[44%] md:h-[100%]" data-aos="fade-up">            
                     <img src="/img/value2.png" alt="value2" class="w-[100%] h-[100%] rounded-lg object-cover" />
                 </div>
             </div>
@@ -75,6 +75,13 @@
 import NavBar from '../components/NavBar.vue';
 import NewsLetter from '../components/NewsLetter.vue';
 import FootBar from '../components/FootBar.vue';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+  duration: 1500
+});
 export default {
     name: 'Values',
     setup() {

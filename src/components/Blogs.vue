@@ -1,6 +1,6 @@
 <template>
   <div class="w-[100%] h-[auto] flex flex-row flex-wrap justify-around">
-    <div v-for="item in displayedPosts" :key="item.id" class="border border-gray-300 rounded-lg w-[21.875rem] h-[21.875rem] my-2 relative duration-150 bottom-0 hover:bottom-1 hover:shadow-lg">
+    <div v-for="item in displayedPosts" :key="item.id" data-aos="slide-up" class="border border-gray-300 rounded-lg w-[21.875rem] h-[21.875rem] my-2 relative duration-150 bottom-0 hover:bottom-1 hover:shadow-lg">
       <router-link :to="'/blogs-view/' + item.id">
         <div class="w-[100%] h-[200px] rounded-lg mb-5 overflow-hidden">
             <img :src="item.thumbnailUrl" :alt="item.topic" class="w-[100%] h-[100%] object-cover duration-150 hover:scale-105" />
@@ -26,6 +26,13 @@
 <script>
 import { ref, computed } from 'vue';
 import { useBlogStore } from '../stores/counter';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+  duration: 1000
+});
 
 export default {
   name: 'Blogs',

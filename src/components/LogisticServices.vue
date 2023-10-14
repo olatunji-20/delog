@@ -3,7 +3,7 @@
     <h1 class="font-bold text-3xl text-center">LOGISTIC SERVICES</h1>
     <p class="text-center pt-4">No money, no problem. Untitled is a next-generation financial technology company in the process.</p>
     <div class="w-[100%] h-[auto] p-4 mt-12 justify-between flex flex-col flex-wrap md:flex-row md:p-20">
-        <div class="w-[100%] h-[25rem] my-2 md:w-[30rem] md:h-[22.5rem]">
+        <div class="w-[100%] h-[25rem] my-2 md:w-[30rem] md:h-[22.5rem]" data-aos="zoom-out-left">
             <div class="w-[4.375rem] bg-[#edeff8] h-[4.375rem] mb-4 rounded-full p-4">
                 <img src="/img/ship.svg" class="w-[100%] h-[100%] object-cover" />
             </div>
@@ -25,13 +25,13 @@
                 <router-link to="/sea-shipments"><p>Read More</p></router-link>
             </div>
         </div>
-        <div class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-2 md:w-[28rem] overflow-hidden">
+        <div class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-2 md:w-[28rem] overflow-hidden" data-aos="zoom-in-right">
             <img src="/img/sea.png" alt="sea-travel" class="w-[100%] h-[100%] object-cover duration-150 hover:scale-105" />
         </div>
-        <div class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-2 md:w-[28rem] md:mt-28 overflow-hidden">
+        <div class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-2 md:w-[28rem] md:mt-28 overflow-hidden" data-aos="zoom-out-left">
             <img src="/img/flight.png" alt="flight-travel" class="w-[100%] h-[100%] object-cover duration-150 hover:scale-105" />
         </div>
-        <div class="w-[100%] h-[21.875rem] my-2 md:w-[30rem] md:mt-28">
+        <div class="w-[100%] h-[21.875rem] my-2 md:w-[30rem] md:mt-28" data-aos="zoom-out-right">
             <div class="bg-[#edeff8] w-[4.375rem] h-[4.375rem] mb-4 rounded-full p-4">
                 <img src="/img/plane.svg" class="w-[100%] h-[100%] object-cover" />
             </div>
@@ -47,6 +47,12 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+  duration: 1000
+});
 export default {
 
 }

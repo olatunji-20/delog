@@ -12,6 +12,7 @@
 
     <div
       class="w-[100%] h-[auto] mx-[auto] mt-12 md:w-[100%]"
+      data-aos="slide-up"
     >
       <Blogs />
     </div>
@@ -25,6 +26,13 @@ import NavBar from "../components/NavBar.vue";
 import NewsLetter from "../components/NewsLetter.vue";
 import Blogs from "../components/Blogs.vue";
 import FootBar from "../components/FootBar.vue";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+  duration: 1000
+});
 
 export default {
   name: "BlogPost",
