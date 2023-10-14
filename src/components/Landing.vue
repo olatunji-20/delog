@@ -10,9 +10,14 @@
             <img src="/img/ship.png" alt="ship" class="w-[100%] h-[100%] object-contain" />
           </div>
           <p class="pt-4 text-lg">No money, no problem. Untitled is a next-generation financial technology company in the process.</p>
-          <div class="border-2 border-red-400 w-[90%] h-[auto] mt-6 md:w-[90%]">
-            <div class="border-2 border-blue-400 w-[100%] h-[auto] py-2 text-center text-blue-400 md:w-[43%] md:inline-block"><p>Get the price</p></div>
-            <div class="border-2 border-white-400 w-[100%] h-[auto] py-2 text-center mt-4 bg-blue-500 text-white md:w-[43%] md:float-right md:mt-0 md:inline-block">Consultation</div>
+          <div class="border-2 border-red-400 w-[90%] h-[auto] mt-6 flex flex-col flex-wrap justify-between md:flex-row md:w-[90%]">
+            <div class="border-2 border-blue-400 w-[100%] h-[auto] py-2 text-center text-blue-400 md:w-[43%]"><p>Get the price</p></div>
+            <div class="border-2 border-white-400 w-[100%] h-[auto] py-2 text-center mt-4 bg-blue-500 text-white md:w-[43%] md:mt-0">
+              <div class="inline-block relative top-1 right-2">
+                <img src="/img/phone.svg" class="object-cover" />
+              </div>
+              <p class="inline-block">Consultation</p>
+            </div>
           </div>
         </div>
       </div>
@@ -24,30 +29,42 @@
         <div class="border-2 border-red-400 w-[100%] h-[330px] my-8 overflow-auto md:h-[250px] md:my-4">
           <div class="border-4 border-purple-400 w-[850px] h-[auto] flex flex-row flex-nowrap justify-between md:h-[245px] md:w-[100%]">
             <div class="border-2 border-green-400 w-[260px] relative h-[300px] py-4 px-2 md:h-[240px] md:w-[210px]">
-              <div class="border-2 border-blue-400 rounded-full w-[60px] h-[60px]"></div>
+              <div class="border-2 border-blue-400 rounded-full w-[60px] h-[60px] p-3">
+                <img src="/img/zap.svg" class="w-[100%] h-[100%] object-cover" />
+              </div>
               <h6 class="font-bold text-xl pt-3">Essential</h6>
               <p class="md:text-sm">No money, no problem. Untitled is a next-generation financial technology.</p>
               <div class="border-2 border-red-400 absolute py-2 bottom-0 w-[95%] md:py-1">
                 <p class="inline">Get Started</p>
-                <div class="border w-[60px] py-2 float-right inline"></div>
+                <div class="border w-[60px] py-2 float-right inline">
+                  <img src="/img/rarrow.svg" class="w-[70%] h-[12px] object-cover" />
+                </div>
               </div>
             </div>
             <div class="border-2 border-green-400 w-[260px] relative h-[300px] py-4 px-2 md:h-[240px] md:w-[210px]">
-              <div class="border-2 border-blue-400 rounded-full w-[60px] h-[60px]"></div>
+              <div class="border-2 border-blue-400 rounded-full w-[60px] h-[60px] p-3">
+                <img src="/img/111.svg" class="w-[100%] h-[100%] object-cover" />
+              </div>
               <h6 class="font-bold text-xl pt-3">Advanced</h6>
               <p class="md:text-sm">No money, no problem. Untitled is a next-generation financial technology.</p>
               <div class="border-2 border-red-400 absolute py-2 bottom-0 w-[95%] md:py-1">
                 <p class="inline">Get Started</p>
-                <div class="border w-[60px] py-2 float-right inline"></div>
+                <div class="border w-[60px] py-2 float-right inline">
+                  <img src="/img/rarrow.svg" class="w-[70%] h-[12px] object-cover" />
+                </div>
               </div>
             </div>
             <div class="border-2 border-green-400 w-[260px] relative h-[300px] py-4 px-2 md:h-[240px] md:w-[210px]">
-              <div class="border-2 border-blue-400 rounded-full w-[60px] h-[60px]"></div>
+              <div class="border-2 border-blue-400 rounded-full w-[60px] h-[60px] p-3">
+                <img src="/img/222.svg" class="w-[100%] h-[100%] object-cover" />
+              </div>
               <h6 class="font-bold text-xl pt-3">Professional</h6>
               <p class="md:text-sm">No money, no problem. Untitled is a next-generation financial technology.</p>
               <div class="border-2 border-red-400 absolute py-2 bottom-0 w-[95%] md:py-1">
                 <p class="inline">Get Started</p>
-                <div class="border w-[60px] py-2 float-right inline"></div>
+                <div class="border w-[60px] py-2 float-right inline">
+                  <img src="/img/rarrow.svg" class="w-[70%] h-[12px] object-cover" />
+                </div>
               </div>
             </div>
           </div>

@@ -1,10 +1,10 @@
 <template>
   <div class="border-4 border-blue-500 w-[100%] h-[auto] flex flex-row flex-wrap justify-around">
 
-    <div v-for="item in displayedPosts" :key="item.id" class="border-2 border-red-500 w-[350px] h-[350px] my-2">
+    <div v-for="item in displayedPosts" :key="item.id" class="border-2 border-red-500 w-[350px] h-[350px] my-2 relative duration-150 bottom-0 hover:bottom-1 hover:shadow-lg">
       <router-link :to="'/blogs-view/' + item.id">
-        <div class="border border-blue-400 w-[100%] h-[200px] mb-5">
-            <img :src="item.thumbnailUrl" :alt="item.topic" class="w-[100%] h-[100%] object-cover" />
+        <div class="border border-blue-400 w-[100%] h-[200px] mb-5 overflow-hidden">
+            <img :src="item.thumbnailUrl" :alt="item.topic" class="w-[100%] h-[100%] object-cover duration-150 hover:scale-105" />
         </div>
         <p class="text-md text-blue-400 inline">{{ item.date }}</p>
         <p class="inline border border-blue-700 mx-2 rounded-full"></p>

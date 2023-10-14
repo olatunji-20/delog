@@ -1,7 +1,9 @@
 <template>
     <NavBar />
     <div class="border-4 border-red-600 w-[100%] h-[auto] py-12">
-        <div class="border-2 border-green-500 w-[60px] h-[60px] my-4 mx-[auto] rounded-full md:h-[80px] md:w-[80px]"></div>
+        <div class="border-2 border-green-500 w-[60px] h-[60px] my-4 p-4 mx-[auto] rounded-full md:h-[80px] md:w-[80px]">
+            <img src="/img/plane.svg" class="w-[100%] h-[100%] object-cover" />
+        </div>
         <h1 class="font-bold text-3xl text-center">AIR SHIPMENTS</h1>
         <p class="text-center p-4">Measure what matters with Untitled's easy-to use reports. You can filter, export and drilldown on the data in a couple clicks.</p>
         

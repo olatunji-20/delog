@@ -1,15 +1,23 @@
 <template>
     <NavBar />
     <div class="border-4 border-red-600 w-[100%] h-[auto] py-12">
-        <div class="border-2 border-green-500 w-[60px] h-[60px] my-4 mx-[auto] rounded-full md:h-[80px] md:w-[80px]"></div>
+        <div class="border-2 border-green-500 w-[60px] h-[60px] my-4 mx-[auto] p-4 rounded-full md:h-[80px] md:w-[80px]">
+            <img src="/img/ship.svg" class="w-[100%] h-[100%] object-cover" />
+        </div>
         <h1 class="font-bold text-3xl text-center">SEA SHIPMENTS</h1>
         <p class="text-center p-4">Measure what matters with Untitled's easy-to use reports. You can filter, export and drilldown on the data in a couple clicks.</p>
         <div class="border-2 border-blue-400 w-[90%] h-[auto] flex flex-col flex-wrap justify-between mt-4 mx-[auto] md:flex-row md:w-[60%]">
-            <div class="border border-red-400 w-[100%] py-3 md:w-[40%]">
-                <p class="indent-3">Full Container Loading</p>
+            <div class="border border-red-400 w-[100%] pl-3 py-3 md:w-[40%]">
+                <div class="border inline-block relative mr-2">
+                    <img src="/img/bars.svg" class="w-[100%] h-[100%] object-cover" />
+                </div>
+                <p class="inline-block">Full Container Loading</p>
             </div>
-            <div class="border border-purple-400 w-[100%] mt-6 py-3 md:w-[40%] md:mt-0">
-                <p class="indent-3">Less Container Loading</p>
+            <div class="border border-purple-400 w-[100%] mt-6 pl-3 py-3 md:w-[40%] md:mt-0">
+                <div class="border inline-block relative top-1 mr-2">
+                    <img src="/img/box.svg" class="w-[100%] h-[100%] object-cover" />
+                </div>
+                <p class="inline-block indent-3">Less Container Loading</p>
             </div>
         </div>
 

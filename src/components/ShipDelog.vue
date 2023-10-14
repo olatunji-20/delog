@@ -4,7 +4,12 @@
     <p class="text-center pt-4">Be the first to know about releases, industry news and insights.</p>
     <div class="border-2 border-red-400 w-[90%] h-[auto] mx-[auto] my-6 md:w-[45%]">
         <div class="border-2 border-blue-400 w-[100%] h-[auto] py-2 text-center text-blue-400 md:w-[40%] md:inline-block"><p>Get the price</p></div>
-        <div class="border-2 border-white-400 w-[100%] h-[auto] py-2 text-center mt-4 bg-blue-500 text-white md:w-[40%] md:float-right md:mt-0 md:inline-block">Consultation</div>
+        <div class="border-2 border-white-400 w-[100%] h-[auto] py-2 text-center mt-4 bg-blue-500 text-white md:w-[40%] md:float-right md:mt-0 md:inline-block">
+                <div class="inline-block relative top-1 mr-2">
+                    <img src="/img/phone.svg" class="w-[100%] h-[100%] object-cover" />
+                </div>
+                <p class="inline-block">Consultation</p>
+        </div>
     </div>
   </div>
 </template>

@@ -4,7 +4,9 @@
     <p class="text-center pt-4">Chat to our friendly team.</p>
     <div class="border-2 border-red-500 w-[100%] h-[auto] mt-12 flex flex-col md:flex-row justify-between md:px-12">
         <div class="border-2 border-green-400 w-[95%] h-[250px] mx-[auto] relative my-4 p-4 md:w-[350px]">
-          <div class="border-2 border-blue-400 w-[80px] h-[80px] rounded-full"></div>
+          <div class="border-2 border-blue-400 w-[80px] h-[80px] p-4 rounded-full">
+            <img src="/img/sms.svg" class="w-[100%] h-[100%] object-cover" />
+          </div>
           <div class="border border-red-400 w-[90%] h-[auto] absolute bottom-0">
             <h3 class="font-bold">Email</h3>
             <p class="leading-8">Speak to our friendly team.</p>
@@ -12,7 +14,9 @@
           </div>
         </div>
         <div class="border-2 border-green-400 w-[95%] h-[250px] mx-[auto] relative my-4 p-4 md:w-[350px]">
-          <div class="border-2 border-blue-400 w-[80px] h-[80px] rounded-full"></div>
+          <div class="border-2 border-blue-400 w-[80px] h-[80px] p-4 rounded-full">
+            <img src="/img/location.svg" class="w-[100%] h-[100%] object-cover" />
+          </div>
           <div class="border border-red-400 w-[90%] h-[auto] absolute bottom-0">
             <h3 class="font-bold">Office</h3>
             <p class="leading-8">Visit our office HQ.</p>
@@ -20,7 +24,9 @@
           </div>
         </div>
         <div class="border-2 border-green-400 w-[95%] h-[250px] mx-[auto] relative my-4 p-4 md:w-[350px]">
-          <div class="border-2 border-blue-400 w-[80px] h-[80px] rounded-full"></div>
+          <div class="border-2 border-blue-400 bg-gray-300 w-[80px] h-[80px] p-4 rounded-full">
+            <img src="/img/phone.svg" class="w-[100%] h-[100%] object-cover" />
+          </div>
           <div class="border border-red-400 w-[90%] h-[auto] absolute bottom-0">
             <h3 class="font-bold">Phone</h3>
             <p class="leading-8">Mon-Fri from 8am to 5pm.</p>

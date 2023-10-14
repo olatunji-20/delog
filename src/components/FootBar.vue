@@ -17,9 +17,15 @@
     <div class="border-2 border-green-600 w-[100%] h-[auto] py-6">
       <p class="text-center">© 2023 DELOG. All rights reserved.</p>
       <div class="border border-yellow-300 w-[180px] h-[40px] flex justify-between my-4 mx-[auto]">
-        <div class="border border-red-600 w-[40px] h-[40px] cursor-pointer relative bottom-0 duration-150 hover:bottom-2"></div>
-        <div class="border border-red-600 w-[40px] h-[40px] cursor-pointer relative bottom-0 duration-150 hover:bottom-2"></div>
-        <div class="border border-red-600 w-[40px] h-[40px] cursor-pointer relative bottom-0 duration-150 hover:bottom-2"></div>
+        <div class="border border-red-600 w-[40px] h-[40px] bg-gray-800 p-2 rounded-full cursor-pointer relative bottom-0 duration-150 hover:bottom-2">
+          <img src="/img/twitter.svg" class="w-[100%] h-[100%] object-cover" />
+        </div>
+        <div class="border border-red-600 w-[40px] h-[40px] bg-gray-800 p-2 rounded-full cursor-pointer relative bottom-0 duration-150 hover:bottom-2">
+          <img src="/img/linkedin.svg" class="w-[100%] h-[100%] object-cover" />
+        </div>
+        <div class="border border-red-600 w-[40px] h-[40px] bg-gray-800 p-2 rounded-full cursor-pointer relative bottom-0 duration-150 hover:bottom-2">
+          <img src="/img/facebook.svg" class="w-[100%] h-[100%] object-cover" />
+        </div>
       </div>
     </div>
   </div>
