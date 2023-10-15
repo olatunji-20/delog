@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-    <OurWareHouse />
+    <OurWare />
     <WedLove />
     <ShipDelog />
     <FootBar />  
@@ -61,8 +61,8 @@
 
 <script>
 import NavBar from '../components/NavBar.vue'
+import OurWare from '../components/OurWare.vue'
 import WedLove from '../components/WedLove.vue'
-import OurWareHouse from '../components/OurWareHouse.vue'
 import ShipDelog from '../components/ShipDelog.vue'
 import FootBar from '../components/FootBar.vue'
 export default {
@@ -72,8 +72,8 @@ export default {
     },
     components: {
         NavBar,
+        OurWare,
         WedLove,
-        OurWareHouse,
         ShipDelog,
         FootBar
     }

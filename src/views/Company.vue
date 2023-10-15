@@ -30,7 +30,7 @@
       </div>
   </div>
   <!-- COMPLETED SECTION -->
-  <OurWareHouse />
+  <OurWare />
   <ShipDelog />
   <FootBar />
 </template>
@@ -39,7 +39,7 @@
 import { ref } from 'vue'
 import NavBar from '../components/NavBar.vue'
 import Team from '../components/Team.vue'
-import OurWareHouse from '../components/OurWareHouse.vue'
+import OurWare from '../components/OurWare.vue'
 import ShipDelog from '../components/ShipDelog.vue'
 import FootBar from '../components/FootBar.vue'
 import { useBlogStore } from '../stores/counter'
@@ -63,7 +63,7 @@ export default {
     components: {
         NavBar,
         Team,
-        OurWareHouse,
+        OurWare,
         ShipDelog,
         FootBar
     }

@@ -39,8 +39,7 @@
 
     <!-- WHY DELOG SECTION -->
 
-
-    <OurWareHouse />
+    <OurWare />
     <FrequentlyAsked />
     <NewsLetter />
     <FootBar />
@@ -50,7 +49,7 @@
 import NavBar from '../components/NavBar.vue';
 import Landing from '../components/Landing.vue';
 import LogisticServices from '../components/LogisticServices.vue';
-import OurWareHouse from '../components/OurWareHouse.vue';
+import OurWare from '../components/OurWare.vue';
 import FrequentlyAsked from '../components/FrequentlyAsked.vue';
 import NewsLetter from '../components/NewsLetter.vue';
 import FootBar from '../components/FootBar.vue';
@@ -71,7 +70,7 @@ export default {
         NavBar,
         Landing,
         LogisticServices,
-        OurWareHouse,
+        OurWare,
         FrequentlyAsked,
         NewsLetter,
         FootBar

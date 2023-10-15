@@ -56,7 +56,7 @@ AOS.init({
   duration: 1000
 });
 export default {
-    name: 'OurWareHouse',
+    name: 'OurWare',
     setup() {
 
     }

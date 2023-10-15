@@ -39,18 +39,19 @@
 
 
     </div>
-    <OurWareHouse />
+    <OurWare />
     <WedLove />
     <ShipDelog />
     <FootBar />  
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
-import OurWareHouse from '../components/OurWareHouse.vue'
-import WedLove from '../components/WedLove.vue'
-import ShipDelog from '../components/ShipDelog.vue'
-import FootBar from '../components/FootBar.vue'
+import NavBar from '../components/NavBar.vue';
+import OurWare from '../components/OurWare.vue';
+import WedLove from '../components/WedLove.vue';
+import ShipDelog from '../components/ShipDelog.vue';
+import FootBar from '../components/FootBar.vue';
+
 export default {
     name: 'AirShipments',
     setup() {
@@ -58,7 +59,7 @@ export default {
     },
     components: {
         NavBar,
-        OurWareHouse,
+        OurWare,
         WedLove,
         ShipDelog,
         FootBar
