@@ -27,11 +27,11 @@ import NewsLetter from "../components/NewsLetter.vue";
 import Blogs from "../components/Blogs.vue";
 import FootBar from "../components/FootBar.vue";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 AOS.init({
-  duration: 1000
+  duration: 1500,
 });
 
 export default {
