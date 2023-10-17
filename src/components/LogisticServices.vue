@@ -45,7 +45,7 @@
         </div>
       </div>
       <div
-        class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-2 md:w-[28rem] overflow-hidden"
+        class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-6 md:w-[28rem] overflow-hidden"
         data-aos="zoom-in-right"
       >
         <img
@@ -55,7 +55,7 @@
         />
       </div>
       <div
-        class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-2 md:w-[28rem] md:mt-28 overflow-hidden"
+        class="border-2 border-gray-200 rounded-md w-[100%] h-[21.875rem] my-6 md:w-[28rem] md:mt-28 overflow-hidden"
         data-aos="zoom-out-left"
       >
         <img
