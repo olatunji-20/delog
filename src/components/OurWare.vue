@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[100%] h-[auto] py-12 flex flex-col flex-wrap md:flex-row justify-between md:px-4"
+    class="overflow-hidden w-[100%] h-[auto] py-12 flex flex-col flex-wrap md:flex-row justify-between md:px-4"
   >
     <div
       class="shadow-md w-[100%] h-[auto] px-4 pt-8 md:w-[51%]"

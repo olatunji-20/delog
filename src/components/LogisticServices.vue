@@ -6,7 +6,7 @@
       company in the process.
     </p>
     <div
-      class="w-[100%] h-[auto] p-4 mt-12 justify-between flex flex-col flex-wrap md:flex-row md:p-20"
+      class="overflow-hidden w-[100%] h-[auto] p-4 mt-12 justify-between flex flex-col flex-wrap md:flex-row md:p-20"
     >
       <div
         class="w-[100%] h-[25rem] my-2 md:w-[30rem] md:h-[22.5rem]"
