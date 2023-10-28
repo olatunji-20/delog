@@ -1,8 +1,15 @@
 <template>
   <div class="w-[100%] h-[auto] flex flex-row flex-wrap justify-around">
-    <h1 v-if="isLoading" class="font-bold text-2xl">
+
+    <div v-if="isLoading" class="ew">
+        <div class="main">
+            <div class="spin"></div>
+        </div>
+    </div>
+
+    <!-- <h1 v-if="isLoading" class="font-bold text-2xl">
       LOADING BLOG ARTICLES...
-    </h1>
+    </h1> -->
 
     <div
       v-else
@@ -117,4 +124,43 @@ export default {
 .active-page:hover {
   background-color: #2988c8;
 }
+
+
+.ew {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main {
+    height: 150px;
+    width: 150px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.spin {
+    border: 6px solid gray;
+    border-top: 6px solid #0063f7;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0px auto;
+    animation-name: spinner;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
 </style>
