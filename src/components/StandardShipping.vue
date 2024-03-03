@@ -28,7 +28,7 @@
     <div
       class="border border-gray-200 w-[95%] h-[auto] mx-auto my-4 text-left md:w-[60%]"
     >
-      <p class="font-bold inline-block">Is there a free trial available?</p>
+      <p class="font-bold inline-block">Is STANDARD there a free trial available?</p>
       <p
         @click="question2"
         class="cursor-pointer font-bold text-2xl relative bottom-2 float-right inline-block"
@@ -51,7 +51,7 @@
     <div
       class="border border-gray-200 w-[95%] h-[auto] mx-auto my-4 text-left md:w-[60%]"
     >
-      <p class="font-bold inline-block">Is there a free trial available?</p>
+      <p class="font-bold inline-block">Is STANDARD there a free trial available?</p>
       <p
         @click="question3"
         class="cursor-pointer font-bold text-2xl relative bottom-2 float-right inline-block"
@@ -74,7 +74,7 @@
     <div
       class="border border-gray-200 w-[95%] h-[auto] mx-auto my-4 text-left md:w-[60%]"
     >
-      <p class="font-bold inline-block">Is there a free trial available?</p>
+      <p class="font-bold inline-block">Is STANDARD there a free trial available?</p>
       <p
         @click="question4"
         class="cursor-pointer font-bold text-2xl relative bottom-2 float-right inline-block"
@@ -97,7 +97,7 @@
     <div
       class="border border-gray-200 w-[95%] h-[auto] mx-auto my-4 text-left md:w-[60%]"
     >
-      <p class="font-bold inline-block">Is there a free trial available?</p>
+      <p class="font-bold inline-block">Is STANDARD there a free trial available?</p>
       <p
         @click="question5"
         class="cursor-pointer font-bold text-2xl relative bottom-2 float-right inline-block"
@@ -120,7 +120,7 @@
     <div
       class="border border-gray-200 w-[95%] h-[auto] mx-auto my-4 text-left md:w-[60%]"
     >
-      <p class="font-bold inline-block">Is there a free trial available?</p>
+      <p class="font-bold inline-block">Is STANDARD there a free trial available?</p>
       <p
         @click="question6"
         class="cursor-pointer font-bold text-2xl relative bottom-2 float-right inline-block"

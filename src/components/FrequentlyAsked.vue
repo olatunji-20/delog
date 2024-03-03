@@ -12,40 +12,40 @@
       <div class="border-2 flex flex-row justify-around flex-nowrap">
         <p
           v-on:click="standard"
-          :class="showThis === 'shipping' ? 'active' : 'non-active'"
+          :class="showShip ? 'active' : 'non-active'"
           class="cursor-pointer inline-block font-bold text-md px-4 py-2 border"
         >
           STANDARD SHIPPING
         </p>
         <p
           v-on:click="delogPlus"
-          :class="showThis === 'delogplus' ? 'active' : 'non-active'"
+          :class="showDelog ? 'active' : 'non-active'"
           class="cursor-pointer inline-block font-bold text-md px-4 py-2 border"
         >
           DELOG PLUS
         </p>
       </div>
       <div class="w-[auto] h-[18.75rem] overflow-hidden mt-4 py-4">
-        <transition
+        <!-- <transition
           enter-active-class="transition duration-[1500ms]"
           enter-from-class="-translate-x-full"
           enter-to-class="translate-x-0"
           leave-active-class="transition duration-[1500ms]"
           leave-from-class="translate-x-0"
           leave-to-class="-translate-x-full"
-        >
-          <StandardShipping v-if="showThis === 'shipping'" />
-        </transition>
-        <transition
+        > -->
+          <StandardShipping v-show="showShip" />
+        <!-- </transition> -->
+        <!-- <transition
           enter-active-class="transition duration-[1500ms]"
           enter-from-class="-translate-x-full"
           enter-to-class="translate-x-0"
           leave-active-class="transition duration-[1500ms]"
           leave-from-class="translate-x-0"
           leave-to-class="-translate-x-full"
-        >
-          <DelogPlus v-if="showThis === 'delogplus'" />
-        </transition>
+        > -->
+          <DelogPlus v-show="showDelog" />
+        <!-- </transition> -->
       </div>
     </div>
   </div>
@@ -59,17 +59,21 @@ import { ref } from "vue";
 export default {
   name: "FrequentlyAsked",
   setup() {
-    const showThis = ref("shipping");
-    const active = ref("active");
+    const showShip = ref(true);
+    const showDelog = ref(false);
+    // const active = ref("active");
 
     const delogPlus = () => {
-      showThis.value = "delogplus";
+      showDelog.value = true;
+      showShip.value = false;
     };
     const standard = () => {
-      showThis.value = "shipping";
+      showShip.value = true ;
+      showDelog.value = false ;
     };
     return {
-      showThis,
+      showShip,
+      showDelog,
       delogPlus,
       standard,
     };
